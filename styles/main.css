@@ -152,26 +152,48 @@ section.article{
     margin-bottom: 30px;
 }
 
+.article .grid-box .oculto{
+    display: none;
+}
+
 /*footer*/
 
 footer{
     width: 95%;
     background-color: #316099;
     border-radius: 0px 200px 0px 0px;
-    padding: 51px 23px;
+    padding: 100px 23px 20px;
     position: relative;
 }
 
+footer .grid-box{
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+footer .sup-footer{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer h2{
-    width: 319px;
+    width: 100%;
     margin-bottom: 15px;
+    max-width: 400px;
 }
 
 footer .p-foot{
     color: white;
     opacity: 0.6;
-    width: 338px;
+    width: 100%;
     margin-bottom: 50px;
+    max-width: 400px;
+}
+
+footer .p-final{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer button{
@@ -225,8 +247,18 @@ footer .foot-logo{
     margin-bottom: 15px;
 }
 
+footer .copy{
+    color: white;
+    opacity: 0.4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
 /*Espacio seguro*/
-@media screen and (min-width: 828px){
+
+/*Tablet*/
+@media screen and (min-width: 780px){
     header nav{
         right: 61px;
         width: 366px;
@@ -307,4 +339,54 @@ footer .foot-logo{
         height: 100%;
     }
     
+
+    footer .grid-box{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 60px;
+        grid-row-gap: 40px;
+    }
+
+    footer button{
+        position: absolute;
+        width: 139.8px;
+        height: 56px;
+        border-radius: 10px;
+        font-size: 16px;
+        top: 104px;
+        right: 147.2px;
+    }
+
+    section.article, section.popular, .buscador{
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .article .grid-box .oculto{
+        display: block;
+    }
+
+    footer .grid-box{
+        max-width: 930px;
+    }
+
+    footer .sup-footer{
+        max-width: 930px;
+    }
+    footer .p-final{
+        max-width: 930px;
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1000px){
+    footer .grid-box{
+        grid-template-columns: repeat(3,1fr);
+        margin: 96px auto;
+    }
+    body{
+        max-width: 1366px;
+        margin: 0 auto;
+    }
 }
