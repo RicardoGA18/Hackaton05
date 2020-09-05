@@ -69,6 +69,14 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
+.foot-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
 /*img*/
 .img{
     width: 100%;
