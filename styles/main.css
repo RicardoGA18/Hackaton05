@@ -50,12 +50,12 @@ header section{
 }
 
 header section h1{
-    width: 138.77px;
+    width: 45%;
     margin-bottom: 18px;
 }
 
 header section p{
-   width: 242.11px;
+   width: 75%;
 }
 
 header .buscador{
@@ -95,6 +95,10 @@ header .buscador input[type="image"]{
 
 section.popular{
     padding: 16px 19px;
+}
+
+.popular .grid-box .item-7, .popular .grid-box .item-8{
+    display: none;
 }
 
 .popular h2{
@@ -142,6 +146,10 @@ section.article{
 .article .foot{
     margin-top: 38px;
     margin-bottom: 60px;
+}
+
+.article h2{
+    margin-bottom: 30px;
 }
 
 /*footer*/
@@ -215,4 +223,88 @@ footer .p-subtitle{
 footer .foot-logo{
     width: 180px;
     margin-bottom: 15px;
+}
+
+/*Espacio seguro*/
+@media screen and (min-width: 828px){
+    header nav{
+        right: 61px;
+        width: 366px;
+    }
+
+    header section br{
+        display:none;
+    }
+
+    .nav{
+        font-size: 20px;
+    }
+
+    section.popular .grid-box{
+        grid-template-columns: repeat(6,1fr);
+        grid-row-gap: 49px;
+        grid-column-gap: 34px;
+    }
+    section.popular .grid-box .item-1{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    section.popular .grid-box .item-2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    section.popular .grid-box .item-3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    section.popular .grid-box .item-4{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    section.popular .grid-box .item-5{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    section.popular .grid-box .item-6{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .popular .grid-box .item-7, .popular .grid-box .item-8{
+        display: block;
+    }
+    section.popular .grid-box .item-7{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    section.popular .grid-box .item-8{
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .article .grid-box{
+        grid-template-columns: 300px 1fr;
+        grid-column-gap: 20px;
+    }
+
+    .article .grid-box img{
+        height: 100%;
+    }
+    
 }
