@@ -42,6 +42,7 @@
     font-size: 18px;
     letter-spacing: 0.04rem;
     color: #1F3F68;
+    line-height: 38px;
 }
 
 .sm{
@@ -61,6 +62,7 @@
     font-size: 14px;
     letter-spacing: 0.04rem;
     color: rgba(0, 0, 0, 0.6);
+    line-height: 26px;
 }
 
 .time{
@@ -75,8 +77,10 @@
 /*grillas*/
 
 .grid-box{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 14px;
 }
 
 
