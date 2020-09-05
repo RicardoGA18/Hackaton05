@@ -53,6 +53,7 @@
     font-size: 13px;
     color: rgba(255, 255, 255, 0.78);
     letter-spacing: 0.04rem;
+    text-align: center;
 }
 
 .p-content{
@@ -64,6 +65,11 @@
 
 .time{
     color: rgba(0, 0, 0, 0.4);
+}
+
+/*img*/
+.img{
+    width: 100%;
 }
 
 /*grillas*/

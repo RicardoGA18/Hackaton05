@@ -1,0 +1,86 @@
+/*Global*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+
+header .top{
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+
+header .logo{
+    position: absolute;
+    top: 47px;
+    left: 15px;
+    width: 48px;
+}
+
+header nav{
+    position: absolute;
+    right: 16px;
+    top: 51px;
+    width: 256px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header section{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(253.6deg, #98D0FC 2.46%, #3481D7 93.24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header section h1{
+    width: 138.77px;
+    margin-bottom: 18px;
+}
+
+header section p{
+   width: 242.11px;
+}
+
+header .buscador{
+    width: 100%;
+    height: 102px;
+    padding: 23px 19px;
+    position: relative;
+}
+
+header input[type="search"]{
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+    border-radius: 10px;
+    border: none;
+    padding-left: 60px;
+}
+
+header input:focus{
+    outline: none;
+}
+
+header .buscador input[type="image"]{
+    position: absolute;
+    left: 41.63px;
+    top: 42px;
+    width: 14.66px;
+}
